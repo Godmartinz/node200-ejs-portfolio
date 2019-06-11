@@ -1,0 +1,25 @@
+{
+  "name": "node200-ejs-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godmartinz/node200-ejs-portfolio.git"
+  },
+  "author": "\"Godfrey Martinez <godmartinz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godmartinz/node200-ejs-portfolio/issues"
+  },
+  "homepage": "https://github.com/Godmartinz/node200-ejs-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
