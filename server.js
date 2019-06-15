@@ -5,7 +5,9 @@ const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const app = express();
 var profile= require ('./profile');
+express.static('public');
 
+app.use(express.static('public'));
 app.use('./profile', profile);
 app.use(morgan('dev'));
 app.use(bodyParser.json());
@@ -21,7 +23,7 @@ app.get('/contact', (req,res) =>{
 
 app.post('/thanks', (req,res) =>{
     res.render('thanks', {contact:req.body})
-    return send_sms.js;
+    
     
 });
 app.get('/', (req,res)=>{

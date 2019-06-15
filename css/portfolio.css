@@ -2,8 +2,8 @@
 body {
   padding-top: 56px;
 }
-.head {
+.container {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('https://w.wallhaven.cc/full/k9/wallhaven-k9k9l7.jpg');
+  background-image: url('public/images/header.jpeg');
 }
