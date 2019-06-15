@@ -7,3 +7,6 @@ body {
   background-repeat: no-repeat;
   background-image: url('public/images/header.jpeg');
 }
+.navbar{
+  margin-bottom: 100px;
+}
