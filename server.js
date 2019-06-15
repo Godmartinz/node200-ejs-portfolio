@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const app = express();
 var profile= require ('./profile');
@@ -20,6 +21,8 @@ app.get('/contact', (req,res) =>{
 
 app.post('/thanks', (req,res) =>{
     res.render('thanks', {contact:req.body})
+    return send_sms.js;
+    
 });
 app.get('/', (req,res)=>{
     const data= {
@@ -31,6 +34,14 @@ app.get('/', (req,res)=>{
     res.render('index', data);
     
 });
+
+app.post('/sms', (req,res)=>{
+    const twiml = new MessagingResponse();
+    twiml.message('I wont see this txt, email me at godmartinz@gmail.com');
+    
+    res.writeHead(200, {'Content-Type': 'text/xml'});
+    res.end(twiml.toString());
+})
 app.listen(8080, () =>{
     console.log('listening at http://localhost:8080');
 });

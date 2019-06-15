@@ -1,21 +1,47 @@
 <html>
-    <head>
-        <title>Contact| Godfrey</title>
-    </head>
-    <body>
-        <div>
-            <form action="thanks" method="POST">
-                <label for="firstName">First Name:</label>
-                <input id="firstName" name="firstName" type="text"/>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
-                <label for="lastName">First Name:</label>
-                <input id="lastName" name="lastName" type="text"/>
+    <link href="css/portfolio.css" type="text/css" rel="stylesheet" />
+    <title>Contact| Godfrey</title>
+  </head>
+  <body>
+    <div class="col-md-8">
+      <form action="thanks send_sms.js" method="POST">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" name="firstName" class= "form-control"
+          type="text" required/ >
 
-                <label for="email">First Name:</label>
-                <input id="email" name="email" type="email"/>
-                
-                <input type="submit" />
-            </form>
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" class="form-control" name="lastName" type="text"
+          required/ >
+
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
         </div>
-    </body>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="123-456-7890"
+          />
+        </div>
+        <div class="form-check"></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script type="text/javascript" src="send_sms.js"></script>
 </html>

@@ -1,10 +1,127 @@
 <html>
     <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link href="css/portfolio.css" type= "text/css" rel="stylesheet">
+  
+
         <title>Godfrey Martinez|The Portfolio</title>
     </head>
     <body>
-        <div>
-            I am <%= person.firstName %> <%= person.lastName %>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Godfrey Martinez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5 head ">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center test">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Welcome</h1>
+          <p class="lead mb-5 text-white-50">Here you will find some of my newest and challenging projects Ive worked on. </p>
         </div>
-    </body>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>A Little About Me:</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+      
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Contact </h2>
+        <hr>
+      
+        <address>
+          <abbr title="Phone">P:</abbr>
+          (619) 818-5707
+          <br>
+          <abbr title="Email">E:</abbr>
+          <a href="mailto:#">godmartinz@gmail.com</a>
+        </address>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <a href="https://gm-changecalc19.herokuapp.com"></a><img class="card-img-top" src="http://placehold.it/300x200" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">Change Calculator</h4>
+            <p class="card-text">Edit text</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://gm-changecalc19.herokuapp.com/" class="btn btn-primary">Check it out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <a href="https://gm-vstda19.herokuapp.com/"></a><img class="card-img-top" src="http://placehold.it/300x200" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">Very Simple To Do App</h4>
+            <p class="card-text">A short term To do list generator utilizing React /w components</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://gm-vstda19.herokuapp.com/" class="btn btn-primary">Check it Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <a href="https://gm-mortgagecalc19.herokuapp.com/"></a><img class="card-img-top" src="http://placehold.it/300x200" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">Mortgage Calculator</h4>
+            <p class="card-text">Another simple calculator utilizing the React library again.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://gm-mortgagecalc19.herokuapp.com/" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Godfrey Martinez 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+
+</body>
 </html>
